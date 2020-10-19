@@ -2,10 +2,8 @@
 NUEVO CONVERSOR DE DIVISA
 '''
 def converting(usd, divisa):
-    ##Precio dólar
-    usd = usd
     ##Aquí le pedimos al usuario que ingrese la cantidad en pesos de la divisa que desea convertir
-    coin = input('INGRESA LA CANTIDAD EN PESOS'+ str(divisa))
+    coin = input('INGRESA LA CANTIDAD EN PESOS'+ (divisa)+ 'QUE DESEAS CONVERTIR: ')
     ##Convertimos el string que nos devuelve el input(output) a número flotante
     coin = float(coin)
     ##Hacemos la conversión, redondeamos números, y convertimos a string (cadena de texto), para concatenar. 
@@ -27,13 +25,13 @@ ELIGE UNA OPCIÓN: """
 options = input (menu)
 
 if options == '1':
-    converting(21.12, ' MEXICANOS: ')
+    converting(21.12, ' MEXICANOS ')
     
 elif options == '2':
-    converting(77.51, ' ARGENTINOS: ')
+    converting(77.51, ' ARGENTINOS ')
 
 elif options == '3':
-    converting(793.50, ' CHILENOS: ')
+    converting(793.50, ' CHILENOS ')
 
 else: 
     print("Error, please enter a valid number")
